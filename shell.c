@@ -1,22 +1,24 @@
-#include  "shell.h" 
-#include <unistd.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <sys/types.h>
-#include <sys/wait.h>
+
+#include "shell.h"
 /*
- *
- *
- */
-int main(int argc, char** argv)
+* int -Entry point
+*@ac arguement count
+*@av -arguement variable
+*Return  - 0 always
+*/
 
+int main(int ac, char **av)
 {
-	(void)argv;
+(void)av;
 
-        if (argc == 1)
-	{
-		prompt(NULL);
-	}
-	return 0;
+
+if (ac == 1)
+{
+
+prompt(NULL);
+}
+
+
+return 0;
 }
 
